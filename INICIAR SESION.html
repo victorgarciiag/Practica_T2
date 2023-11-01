@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="EmailValidacion.js"></script>
   <meta charset="utf-8">
   <title>Inicio de sesión</title>
   <link rel="stylesheet" href="style.css">
@@ -72,7 +73,7 @@
       <label for="contraseña">Contraseña</label>
       <input type="password" id="contraseña" name="contraseña" placeholder="Tu contraseña" required>
 
-      <button type="submit">Iniciar sesión</button>
+      <button type="submit" onclick="ValidateEmail(document.getElementById('email')) >Iniciar sesión</button>
     </form>
   </div>
 
