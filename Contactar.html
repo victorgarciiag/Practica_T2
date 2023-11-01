@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto con la Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="EmailValidacion.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('fotofondoweb.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-layer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .input-group {
+            flex: 0 1 calc(50% - 10px);
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Contacto con la Empresa</h1>
+    <div class="input-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+    </div>
+    <div class="input-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="input-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" required></textarea>
+    </div>
+    <button type="button" onclick="ValidateEmail(document.getElementById('email'))" >Enviar Mensaje</button>
+</div>
+
+</body>
+</html>
